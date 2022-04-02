@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800&display=swap');
+
+* {
+    font-family: 'Montserrat';
+}
+
+h1 {
+    font-size: 30px;
+    color: pink;
+    padding: 30px;
+}
+
+h2 {
+    font-size: 30px;
+    color: #817F7F;
+    padding: 15px;
+    background-color: rgb(255, 217, 223);
+    
+}
+
+p {
+    font-size: large;
+    color: blueviolet;
+    font-weight: bold;
+
+
+}
+
+.mainbox {
+    border: 3px;
+    width: auto;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    margin: 60px;
+    box-shadow: 0 0 20px 10px rgba(150, 150, 150, 0.1);
+}
+
+
+.damwonkia-img {
+    width: 1000px;
+    height: 1000px;
+}
+
+.lol-img {
+    width: auto;
+    height: 250px;
+}
+
+.upbit-img {
+    
+}
