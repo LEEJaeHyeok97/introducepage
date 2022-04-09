@@ -22,8 +22,13 @@ p {
     font-size: large;
     color: blueviolet;
     font-weight: bold;
+    
 
 
+}
+
+.container {
+    display: flex;
 }
 
 .mainbox {
@@ -39,15 +44,26 @@ p {
 
 
 .damwonkia-img {
-    width: 1000px;
-    height: 1000px;
+    width: 600px;
+    height: 600px;
+    
+}
+
+.upbit-img {
+    width: 600px;
+    height: 600px;
 }
 
 .lol-img {
     width: auto;
-    height: 250px;
+    height: 182px;
 }
 
-.upbit-img {
-    
+
+.jd {
+    display: flex;
+    object-fit: cover;
+    text-align: center;
 }
+
+
