@@ -44,10 +44,24 @@
               </div>
             </div>
           </nav>
-          <div class="mainbox">
-          <h1>자기소개 페이지^_^</h1>
-          <h2>기본정보</h2>
-          <div>
+
+        
+          <!--우클릭시 contexmenu 이벤트 발생-->
+          <div class="mainbox" oncontextmenu="cont_menu()">
+
+          <section class="title1">
+          <h1 class="big_title">자기소개 페이지^_^</h1>
+          <!--다크모드 ON/OFF-->
+          <button class= "button" onclick="light_mode()">Light</button>
+          <button class= "button" onclick="dark_mode()">Dark</button>
+         </section>
+
+         
+          <h2 class="small_title">기본정보</h2>
+          <button class="hide_button" onclick="getShow()">show</button>
+          <button class="hide_button" onclick="getHide()">hide</button>
+          
+          <div id = "info">
               <p>이름 : 이재혁</p>
               <p>파트 : 서버</p>
               <p>거주지 : 서울</p>
@@ -57,9 +71,9 @@
           
           <div class="container">
 
-              <div>
+              <div style="margin-left: auto;">
               <p>1. 롤</p>
-              <img class="lol-img" src="images/teemohoney.png">
+              <img class="lol-img"  src="images/teemohoney.png">
               </div>
               
               <div>
@@ -72,7 +86,7 @@
               <img src="images/stock.jpg">
               </div>
 
-              <div>
+              <div style="margin-right: auto">
               <p>4. 비트코인</p>
               <img src="images/btc.jpg">
               </div>
@@ -80,14 +94,14 @@
               
           </div>
 
-          <h2>요즘 관심사</h2>
+          <h2 class="small_title">요즘 관심사</h2>
           <div>
             <p>메타버스..? 게임</p>
             <img class="metaverse-img" src="images/metaverse.jpg">
             <p> 유니티 주식 투자,, 와 -20%</p>
           </div>
 
-          <h2>잡담 ^~^</h2>
+          <h2 class="small_title">잡담 ^~^</h2>
 
           <div class="jd">
 
@@ -98,12 +112,65 @@
 
           <div>
           <p>업비트</p>
-          <img class="upbit-img" src="images/upbit.jpg">
+          <img id = "upbit-img-id" class="upbit-img" onclick="change_bit_img()" src="images/upbit.jpg">
           </div>
           
           </div>
           
         </div>
 
+
+        <!--자바스크립트-->
+        <script type="text/javascript">
+
+
+          function dark_mode() {
+            document.querySelector("body").style.backgroundColor="rgb(47, 52, 55)";
+            document.querySelector("body").style.color="white";
+            
+            
+          }
+
+          function light_mode() {
+            document.querySelector("body").style.backgroundColor="white";
+            document.querySelector("body").style.color="black";
+            
+          }
+
+
+          //클릭시 이미지 변환!
+          flag = 1
+
+          function change_bit_img() {
+            if(flag == 1){
+            document.getElementById("upbit-img-id").src="images/upbit2.jpg";
+            flag = 0;
+            }
+            else{
+              document.getElementById("upbit-img-id").src="images/upbit.jpg";
+              flag = 1;
+            }
+          }
+
+            //정보 숨기기
+
+           function getShow() {
+             document.getElementById("info").style.display = "block";
+           }
+
+           function getHide() {
+             document.getElementById("info").style.display = "none";
+           }
+
+
+           //우클릭 시 이벤트 발생
+           function cont_menu() {
+             alert("퍼갈때 출처를 밝혀주세요!");
+           }
+
+          
+          
+
+        </script>
     </body>
 </html>

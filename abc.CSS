@@ -4,13 +4,22 @@
     font-family: 'Montserrat';
 }
 
-h1 {
-    font-size: 30px;
-    color: pink;
+.big_title {
+    font-size: 50px;
     padding: 30px;
+    float: left;
 }
 
-h2 {
+.title1 {
+    overflow: hidden;
+}
+
+.hide_button {
+    float: right;
+}
+
+
+.small_title {
     font-size: 30px;
     color: #817F7F;
     padding: 15px;
@@ -18,21 +27,23 @@ h2 {
     
 }
 
-p {
-    font-size: large;
-    color: blueviolet;
-    font-weight: bold;
-    
-
-
+.button {
+    float: right;
+    margin-top: 40px;
 }
+
+
 
 .container {
     display: flex;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .mainbox {
     border: 3px;
+    font-size: 20px;
+    font-weight: bold;
     width: auto;
     text-align: left;
     margin-left: auto;
@@ -66,4 +77,11 @@ p {
     text-align: center;
 }
 
+
+
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
 
