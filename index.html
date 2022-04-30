@@ -49,48 +49,56 @@
           <!--우클릭시 contexmenu 이벤트 발생-->
           <div class="mainbox" oncontextmenu="cont_menu()">
 
-          <section class="title1">
-          <h1 class="big_title">자기소개 페이지^_^</h1>
-          <!--다크모드 ON/OFF-->
-          <button class= "button" onclick="light_mode()">Light</button>
-          <button class= "button" onclick="dark_mode()">Dark</button>
-         </section>
+            <section class="title1">
+              <h1 class="big_title">자기소개 페이지^_^</h1>
+               <!--다크모드 ON/OFF-->
+              <button class= "button" onclick="light_mode()">Light</button>
+              <button class= "button" onclick="dark_mode()">Dark</button>
+            </section>
 
          
-          <h2 class="small_title">기본정보</h2>
-          <button class="hide_button" onclick="getShow()">show</button>
-          <button class="hide_button" onclick="getHide()">hide</button>
+            <h2 class="small_title">기본정보</h2>
+            <button class="hide_button" onclick="getShow()">show</button>
+            <button class="hide_button" onclick="getHide()">hide</button>
           
-          <div id = "info">
-              <p>이름 : 이재혁</p>
-              <p>파트 : 서버</p>
-              <p>거주지 : 서울</p>
-              <p>학과 : 데이터테크놀로지</p>
-          </div>
-          <h2>취미</h2>
+            <div id = "info">
+                <p>이름 : 이재혁</p>
+                <p>파트 : 서버</p>
+                <p>거주지 : 서울</p>
+                <p>학과 : 데이터테크놀로지</p>
+            </div>
+
+            <h2 class="small_title">취미</h2>
           
           <div class="container">
 
-              <div style="margin-left: auto;">
+            <sector class="sec1">
+
+              <div class="item1">
               <p>1. 롤</p>
               <img class="lol-img"  src="images/teemohoney.png">
               </div>
               
-              <div>
+              <div class="item2">
               <p>2. 헬스</p>
               <img src="images/health.jpg">
               </div>
               
-              <div>
+            </sector>
+
+            <sector class="sec2">
+            
+              <div class="item3">
               <p>3. 주식</p>
               <img src="images/stock.jpg">
               </div>
 
-              <div style="margin-right: auto">
+              <div class="item4">
               <p>4. 비트코인</p>
               <img src="images/btc.jpg">
               </div>
               
+            </sector>
               
           </div>
 
@@ -106,13 +114,13 @@
           <div class="jd">
 
           <div>
-          <p>롤</p>
-          <img class="damwonkia-img" src="images/damwonkia.png">
+            <p>롤</p>
+            <img class="damwonkia-img" src="images/damwonkia.png">
           </div>
 
           <div>
-          <p>업비트</p>
-          <img id = "upbit-img-id" class="upbit-img" onclick="change_bit_img()" src="images/upbit.jpg">
+            <p>업비트</p>
+            <img id = "upbit-img-id" class="upbit-img" onclick="change_bit_img()" src="images/upbit.jpg">
           </div>
           
           </div>
